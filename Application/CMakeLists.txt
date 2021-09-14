@@ -2,6 +2,6 @@ set(SOURCE
         main.cpp
         )
 
-add_executable(tests ${SOURCE})
+add_executable(Engine ${SOURCE})
 
-target_link_libraries(tests Engine)
+target_link_libraries(Engine LogModule)

@@ -2,7 +2,7 @@
 // Created by kolya on 9/12/2021.
 //
 
-#include "totest.h"
+#include "LogModule/src/totest.h"
 
 int main()
 {

@@ -30,7 +30,9 @@ set(EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}")
 
 add_subdirectory(Engine)
 add_subdirectory(Application)
+add_subdirectory(googletest)
 
+# TODO: find package
 
 if (${ENABLE_TESTING})
     enable_testing()
