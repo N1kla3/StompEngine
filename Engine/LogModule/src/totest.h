@@ -15,6 +15,8 @@ public:
     void whata();
 
     void PrintVersionss();
+
+    void stdout_example();
 };
 
 #endif //STOMPENGINE_TOTEST_H
