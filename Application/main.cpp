@@ -6,9 +6,10 @@
 
 int main()
 {
-    my a{};
+    My a{};
     a.function();
     a.whata();
     a.stdout_example();
     return 0;
 }
+

@@ -4,20 +4,20 @@
 
 #include "totest.h"
 #include "iostream"
-#include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog/spdlog.h"
 
-void my::function()
+void My::function()
 {
     std::cout << "connected";
 }
 
-void my::PrintVersionss()
+void My::PrintVersionss()
 {
     function();
 }
 
-void my::stdout_example()
+void My::stdout_example()
 {
     // create color multi threaded logger
     auto console = spdlog::stdout_color_mt("console");
@@ -25,9 +25,9 @@ void my::stdout_example()
     spdlog::get("console")->info("loggers can be retrieved from a global registry using the spdlog::get(logger_name)");
 }
 
-void my::whata() {
+void My::whata()
+{
 #if ENGINE_MAJOR_VERSION == 0
     std::cout << ENGINE_MAJOR_VERSION;
 #endif
 }
-

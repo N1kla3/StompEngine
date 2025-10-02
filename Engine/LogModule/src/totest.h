@@ -1,11 +1,8 @@
-//
-// Created by kolya on 9/12/2021.
-//
+#pragma once
 
-#ifndef STOMPENGINE_TOTEST_H
-#define STOMPENGINE_TOTEST_H
+#define STOMP_API __attribute__((visibility("default")))
 
-class __declspec(dllexport) my
+class STOMP_API My
 {
 public:
     int a;
@@ -18,5 +15,3 @@ public:
 
     void stdout_example();
 };
-
-#endif //STOMPENGINE_TOTEST_H
