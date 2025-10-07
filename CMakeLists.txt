@@ -26,7 +26,8 @@ set(LIBRARY_OUTPUT_PATH "${CMAKE_BINARY_DIR}")
 set(EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}")
 
 add_subdirectory(Engine)
-add_subdirectory(Application)
+add_subdirectory(Tools)
+add_subdirectory(Editor)
 
 if(STOMP_ENABLE_TESTS)
         # for all tests use googletest

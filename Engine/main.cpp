@@ -1,4 +1,4 @@
-#include "LogModule/src/totest.h"
+#include "CoreModule/src/Log/totest.h"
 
 int main()
 {
