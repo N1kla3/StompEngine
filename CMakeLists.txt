@@ -11,6 +11,10 @@ set(CMAKE_CXX_STANDARD 20)
 
 include_directories(${CMAKE_SOURCE_DIR}/Engine)
 
+include(ProjectOptions.cmake)
+stomp_setup_options()
+stomp_local_options()
+
 add_compile_options()
 add_compile_definitions(ENABLE_TESTING=${ENABLE_TESTING}
         ENGINE_MAJOR_VERSION=${ENGINE_MAJOR_VERSION}
@@ -24,8 +28,10 @@ set(EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}")
 add_subdirectory(Engine)
 add_subdirectory(Application)
 
-if(STOMP_ENABLE_TESTING)
+if(STOMP_ENABLE_TESTS)
         # for all tests use googletest
+        include(CTest)
+        enable_testing()
         add_subdirectory(googletest)
 endif()
 

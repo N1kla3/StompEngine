@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-./linux-debug/tests/
+cd linux-debug && ctest -VV

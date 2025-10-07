@@ -2,6 +2,6 @@ set(SOURCE
         main.cpp
         )
 
-add_executable(StompEngine ${SOURCE})
+add_executable(Game ${SOURCE})
 
-target_link_libraries(StompEngine LogModule)
+target_link_libraries(Game LogModule)
