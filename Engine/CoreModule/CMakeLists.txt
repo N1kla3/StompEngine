@@ -1,6 +1,10 @@
 set(SOURCE
+        Containers/Vector.h
+        Log/Logs.cpp
+        Log/Logs.h
         Log/totest.h
         Log/totest.cpp
+        Text/String.h
         )
 
 
