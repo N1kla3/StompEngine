@@ -1,10 +1,14 @@
-#include "CoreModule/src/Log/totest.h"
+#include "CoreModule/src/Log/Logs.h"
+
+MAKE_LOG_CATEGORY(CoreModuleLog);
 
 int main()
 {
-    My a{};
-    a.function();
-    a.whata();
-    a.stdout_example();
+    INFO(CoreModuleLog, "======================= Start Engine =======================");
+#if STOMP_EDITOR
+    INFO(CoreModuleLog, "======================= Start Editor =======================");
+#endif
+
+    INFO(CoreModuleLog, "======================= Close Engine =======================");
     return 0;
 }

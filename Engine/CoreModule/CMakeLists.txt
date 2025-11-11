@@ -2,9 +2,8 @@ set(SOURCE
         Containers/Vector.h
         Log/Logs.cpp
         Log/Logs.h
-        Log/totest.h
-        Log/totest.cpp
         Text/String.h
+        Core/Defines.h
         )
 
 
@@ -14,6 +13,8 @@ add_subdirectory(spdlog)
 
 add_library(CoreModule STATIC ${SOURCE})
 target_link_libraries(CoreModule PUBLIC spdlog::spdlog)
+
+include_directories(src)
 
 if (STOMP_ENABLE_TESTS)
         set(TESTS
