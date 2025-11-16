@@ -1,3 +1,5 @@
 /linux-debug/
+/windows-debug/
 compile_commands.json
 /.cache/
+/logs/
