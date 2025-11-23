@@ -4,6 +4,11 @@ set(SOURCE
         Log/Logs.h
         Text/String.h
         Core/Defines.h
+        Memory/SharedPtr.h
+        Memory/UniquePtr.h
+        Application/Engine.h
+        Application/Engine.cpp
+        Application/PlatformLayer.h
         )
 
 
