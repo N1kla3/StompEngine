@@ -1,5 +1,7 @@
 /linux-debug/
+/linux-release/
 /windows-debug/
+/windows-release/
 compile_commands.json
 /.cache/
 /logs/
